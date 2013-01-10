@@ -12,10 +12,12 @@ CREATE TABLE dim_customers (
     id integer,
     name varchar(128),
     address varchar(256),
-    surrogate SERIAL PRIMARY KEY
+    surrogate SERIAL PRIMARY KEY,
+    valid_from timestamp,
+    valid_to timestamp
 );
 
 INSERT INTO src_customers (id, name, address) VALUES (1,'peter','kapicova');
 INSERT INTO src_customers (id, name, address) VALUES (2,'danko','romanova');
-INSERT INTO src_customers (id, name, address) VALUES (3,'stivi','hornadolna');
+INSERT INTO src_customers (id, name, address) VALUES (3,'stivi','foobar');
 
