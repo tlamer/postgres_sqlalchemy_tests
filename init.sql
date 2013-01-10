@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS dim_customers;
 DROP TABLE IF EXISTS src_customers;
-DROP TABLE IF EXISTS tmp_new;
+DROP TABLE IF EXISTS tmp;
 
 CREATE TABLE src_customers (
     id integer PRIMARY KEY,
