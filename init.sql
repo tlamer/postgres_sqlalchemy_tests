@@ -13,7 +13,7 @@ CREATE TABLE dim_customers (
     name varchar(128),
     address varchar(256),
     surrogate SERIAL PRIMARY KEY,
-    valid_from timestamp,
+    start_date timestamp,
     valid_to timestamp
 );
 
